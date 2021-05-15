@@ -1,0 +1,26 @@
+{
+  "name": "understanding_ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarolynMcNeillie/Understanding_TS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarolynMcNeillie/Understanding_TS/issues"
+  },
+  "homepage": "https://github.com/CarolynMcNeillie/Understanding_TS#readme"
+}
