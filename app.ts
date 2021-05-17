@@ -1,5 +1,5 @@
 function combine(input1: (number | string), input2: (number | string), conversionType: 'string' | 'number') {
-    let result;
+    let result: (number | string);
     if (conversionType === 'string') {
         result = input1.toString() + input2.toString()
     } else {
