@@ -1,23 +1,15 @@
-/* Object Types */
-// const person : {
-//     name: string;
-//     age: number
-// }
-var person = {
-    name: "Carolyn",
-    age: 37,
-    hobbies: ['reading', 'cooking', 'coding']
-};
-var favouriteActivites;
-console.log(person.name);
-for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
-    var hobby = _a[_i];
-    console.log(hobby);
+function combine(input1, input2, conversionType) {
+    var result;
+    if (conversionType === 'string') {
+        result = input1.toString() + input2.toString();
+    }
+    else {
+        result = +input1 + +input2;
+    }
+    console.log(result);
+    return result;
 }
-var Role;
-(function (Role) {
-    Role[Role["ADMIN"] = 0] = "ADMIN";
-    Role[Role["READ_ONLY"] = 1] = "READ_ONLY";
-    Role[Role["AUTHOR"] = 2] = "AUTHOR";
-})(Role || (Role = {}));
-console.log(Role.ADMIN);
+var combinedAges = combine(37, 44, 'number');
+var combinedNames = combine("McNeillie", "Taunton", 'string');
+var combinedStringAges = combine(37, 44, 'string');
+var combinedNumberNames = combine("McNeillie", "Taunton", 'number');
